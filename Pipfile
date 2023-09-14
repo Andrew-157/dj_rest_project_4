@@ -11,6 +11,7 @@ psycopg2-binary = "*"
 djoser = "*"
 djangorestframework-simplejwt = "*"
 python-dotenv = "*"
+django-oauth-toolkit = "*"
 
 [dev-packages]
 autopep8 = "*"
