@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'rest_framework',
     'oauth2_provider',
+    'problems',
 ]
 
 MIDDLEWARE = [
