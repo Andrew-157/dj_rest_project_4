@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+    'djoser',
     'rest_framework',
     'oauth2_provider',
     'problems',
@@ -148,9 +149,14 @@ OAUTH2_PROVIDER = {
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'oauth2_provider.contrib.rest_framework.Oauth2Authentication',
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
     ),
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
+}
+
+
+DJOSER = {
+    'SERIALIZERS': {
+        'user_create': 'users.serializers.UserCreateSerializer',
+        'current_user': 'users.serializers.UserSerializer'
+    }
 }

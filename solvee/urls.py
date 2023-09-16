@@ -20,5 +20,6 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include('debug_toolbar.urls')),
-    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider'))
+    path('o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+    path('auth/', include('djoser.urls'))
 ]

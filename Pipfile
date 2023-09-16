@@ -8,10 +8,9 @@ django = "*"
 djangorestframework = "*"
 django-debug-toolbar = "*"
 psycopg2-binary = "*"
-djoser = "*"
-djangorestframework-simplejwt = "*"
 python-dotenv = "*"
 django-oauth-toolkit = "*"
+djoser = "*"
 
 [dev-packages]
 autopep8 = "*"
